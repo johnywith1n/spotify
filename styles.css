@@ -1,0 +1,10 @@
+.track {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.track-name {
+	margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
