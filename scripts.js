@@ -56,7 +56,12 @@ function populateModal(name, id) {
 			if (imageArrayLen > 0) {
 				htmlString += '<img src="' + track.album.images[imageArrayLen-1].url + '" />';
 			}
-			htmlString += '<span class="track-name"><a href="' + track.uri + '">' + tracks[i].name + '</a></span>';
+                        
+                        var trackUrl = track.external_urls.spotify;
+                        
+                        if (trackUrl == null) { trackUrl = "#"; }
+
+			htmlString += '<span class="track-name"><a href="' + trackUrl + '">' + track.name + '</a></span>';
 			htmlString += '</div></div>';
 		}
 
